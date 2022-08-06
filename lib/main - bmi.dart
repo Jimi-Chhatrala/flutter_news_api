@@ -48,7 +48,7 @@ class _BMIState extends State<BMI> {
   calcBMI() {
     height = double.parse(heightController.text);
     weight = double.parse(weightController.text);
-    height = (height!/100);
+    height = (height! / 100);
 
     setState(() {
       result = (weight / (height * height));
